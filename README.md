@@ -1,6 +1,7 @@
-**tushdo** - a cli to-do list written in C
+## tushdo
+a cli to-do list written in C
 
-**usage:**
+## usage
 -a "task_description"    add new task
 -c task_id               mark task as done
 -u task_id               mark task as not done
