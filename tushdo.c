@@ -69,7 +69,7 @@ int main(int argc, char *argv[]) {
     for (int i = 1; i < argc; ++i) {
         if (strcmp(argv[i], "-a") == 0) {
             struct task new_task = {'-'};
-            for (int j = 0; j < sizeof(argv[i+1]) + 1; ++j) {  // strangely i needed to add this +1 to the range,        
+            for (int j = 0; j < strlen(argv[i+1]); ++j) {  // strangely i needed to add this +1 to the range,        
                 new_task.message[j] = argv[i+1][j];            // so it would get the last char 
             }
             insert_vecror(&task_pool, new_task);
